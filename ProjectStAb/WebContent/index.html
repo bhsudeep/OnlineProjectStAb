@@ -29,6 +29,10 @@
 		<script src="libjs/jquery.easing.1.3.min.js"></script>
 		<script src="libjs/jquery.ui.totop.min.js"></script>
 		<script src="libjs/tms-0.4.1.min.js"></script>
+		<script src="libjs/jquery.backgroundvideo.min.js"></script>
+		<script src="js/script.js"></script>
+		
+<!-- 		<script src="js/js_3489ac6f04490ab8c3bb4f4b14943860.js"></script> -->
 		
 		<script src="libjs/path.js"></script>
 
@@ -49,23 +53,23 @@
 		    
 		    $("#circle1")
 		    .animate({height: "hide", width: "hide"}, 5000, "easeOutElastic")
-		    .animate({height: "show", width: "show"}, 6000, "easeInElastic");
+		    .animate({height: "show", width: "show"}, 6000, "easeOutBounce");
 		     
 		     $("#circle2")
 		    .animate({height: "hide", width: "hide"}, 4000, "easeOutElastic")
-		    .animate({height: "show", width: "show"}, 5000, "easeInElastic");
+		    .animate({height: "show", width: "show"}, 5000, "easeOutBounce");
 		     
 		     $("#circle3")
 		    .animate({height: "hide", width: "hide"}, 3000, "easeOutElastic")
-		    .animate({height: "show", width: "show"}, 4000, "easeInElastic");
+		    .animate({height: "show", width: "show"}, 4000, "easeOutBounce");
 		     
 		     $("#circle4")
 		    .animate({height: "hide", width: "hide"}, 2000, "easeOutElastic")
-		    .animate({height: "show", width: "show"}, 3000, "easeInElastic");
+		    .animate({height: "show", width: "show"}, 3000, "easeOutBounce");
 		     
 		    $("#circle5")
 		    .animate({height: "hide", width: "hide"}, 1000, "easeOutElastic")
-		    .animate({height: "show", width: "show"}, 2000, "easeInElastic");
+		    .animate({height: "show", width: "show"}, 2000, "easeOutBounce");
 		     		    
 		    
 		    $('#circle1').delay(0).show(function () {
@@ -220,6 +224,8 @@
 		</header>
 <!--=======content================================-->
 		<div id="page1" class="content">
+		<div id="bgVideo" class="background"></div>
+            		
 			<div class="ic"></div>
 			<!--=======New content - Sudeep test================================-->
 	<div id="profile" style="display: none;">
@@ -396,6 +402,13 @@
 		</div>
 		<div id="page4" class="content">
 			<div class="container_12">
+			<div class="car">
+                    
+                    <div class="chassis"></div>
+                    <div class="wheels" id="front-wheels"></div>
+                    <div class="wheels" id="rear-wheels"></div>
+                </div>
+				
 <!-- 				<div class="grid_12"> -->
 <!-- 					<h3>Our Clients</h3> -->
 <!-- 				</div> -->

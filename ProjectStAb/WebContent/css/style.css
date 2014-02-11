@@ -684,3 +684,45 @@ footer a:hover {
     z-index: 0;
 }
 
+/****added by sankar for video***/
+#bgVideo {
+    overflow: hidden;
+}
+#bgVideo > video {
+    position: absolute !important;
+    top: 0 !important;
+}
+
+.background {
+    background: none no-repeat scroll 50% 50% / cover rgba(0, 0, 0, 0);
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+.background {
+    background-size: auto 200%;
+}
+}
+
+/****added by sankar for car***/
+.car {
+    height: 198px;
+    margin-left: 190px;
+    margin-top: 180px;
+    position: relative;
+    width: 1026px;
+}
+.car .chassis {
+    background: url("../images/day-car.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+    height: inherit;
+    left: -383px;
+    position: absolute;
+    top: 0;
+    width: inherit;
+}
